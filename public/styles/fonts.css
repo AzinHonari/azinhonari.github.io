@@ -1,0 +1,120 @@
+﻿@font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	src: url("../fonts/Roboto-Bold-webfont.eot");
+	src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+	  url("../fonts/Roboto-Bold-webfont.woff") format("woff"),
+	  url("../fonts/Roboto-Bold-webfont.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 300;
+	src: url("../fonts/Roboto-Light-webfont.eot");
+	src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"),
+	  url("../fonts/Roboto-Light-webfont.woff") format("woff"),
+	  url("../fonts/Roboto-Light-webfont.ttf") format("truetype");
+  }
+  
+  @font-face {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	src: url("../fonts/Roboto-Regular-webfont.eot");
+	src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),
+	  url("../fonts/Roboto-Regular-webfont.woff") format("woff"),
+	  url("../fonts/Roboto-Regular-webfont.ttf") format("truetype");
+  }
+
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/iranyekanwebbold.eot');
+	src: url('../fonts/iranyekanwebbold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+	url('../fonts/iranyekanwebbold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/iranyekanwebbold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 100;
+	src: url('../fonts/iranyekanwebthin.eot');
+	src: url('../fonts/iranyekanwebthin.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+	url('../fonts/iranyekanwebthin.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/iranyekanwebthin.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/iranyekanweblight.eot');
+	src: url('../fonts/iranyekanweblight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+	url('../fonts/iranyekanweblight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/iranyekanweblight.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/iranyekanwebregular.eot');
+	src: url('../fonts/iranyekanwebregular.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+	url('../fonts/iranyekanwebregular.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/iranyekanwebregular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/iranyekanwebmedium.eot');
+	src: url('../fonts/iranyekanwebmedium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+	url('../fonts/iranyekanwebmedium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/iranyekanwebmedium.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 800;
+	src: url('../fonts/iranyekanwebextrabold.eot');
+	src: url('../fonts/iranyekanwebextrabold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+	url('../fonts/iranyekanwebextrabold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+	url('../fonts/iranyekanwebextrabold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 900;
+	src: url('../fonts/iranyekanwebblack.eot');
+	src: url('../fonts/iranyekanwebblack.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/iranyekanwebblack.woff') format('woff'), 
+	url('../fonts/iranyekanwebblack.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: iranyekan;
+	font-style: normal;
+	font-weight: 950;
+	src: url('../fonts/iranyekanwebextrablack.eot');
+	src: url('../fonts/iranyekanwebextrablack.eot?#iefix') format('embedded-opentype'), 
+	url('../fonts/iranyekanwebextrablack.woff') format('woff'), 
+	url('../fonts/iranyekanwebextrablack.ttf') format('truetype');
+}
+
+body {
+	font-family: Roboto;
+}
+
+input, button, textarea, select {
+	font-size:16px;
+	font-family: Roboto !important;
+}
