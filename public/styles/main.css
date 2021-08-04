@@ -133,7 +133,7 @@ main .info {
         float: left;
         text-align: justify;
         font-size: 1rem;
-        line-height: 1.25rem;
+        line-height: 1.5rem;
         font-weight: 500;
     }
 
@@ -205,11 +205,16 @@ main .experience {
         line-height: 2.5rem;
     }
 
+    main .experience h3 span{
+        color: var(--clrBlack100);
+        font-weight: 500;
+        font-size: 1.5rem;
+    }
 
     main .experience time span:first-of-type,
     main .experience h4  {
         color: var(--clrBlack100);
-        font-weight: 600;
+        font-weight: 500;
         font-size: 1.25rem;
         line-height: 2rem;
     }
