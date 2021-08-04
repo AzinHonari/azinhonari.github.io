@@ -133,8 +133,8 @@ main .info {
         float: left;
         text-align: justify;
         font-size: 1rem;
-        line-height: 1.5rem;
-        font-weight: 500;
+        line-height: 1.65rem;
+        font-weight: 400;
     }
 
         main .info .content:last-of-type {
