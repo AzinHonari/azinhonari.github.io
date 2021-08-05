@@ -174,10 +174,13 @@ main .info {
     }
 
 
-    main .info .content .contact a {
-        display: block;
-        box-sizing: border-box;
-    }
+     main .info .content .contact span:first-of-type,
+     main .info .content .status span:first-of-type
+      {
+        display: inline-block;
+        width: 1.5rem;
+        font-size: 1rem;
+    } 
 
 
 main .experience {
