@@ -419,18 +419,12 @@ main .skills {
 }
 
 @media only screen and (max-width: 440px) {
-    /* header img {
-        float:none;
-        margin:0 auto;
-        
-    }
 
     header h1 {
         clear:both;
         width: 100%;
-        text-align:center;
         padding-top: 2rem;
-    } */
+    } 
 
     main .experience h2 {
         font-size: 1.5rem;
