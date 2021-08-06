@@ -436,29 +436,21 @@ main .skills {
         line-height: 2rem;
     }
 
-
     main .experience p {
         font-size: 0.8rem;
         line-height: 1.75rem;
     }
-
 
     main .experience ol h4 {
         font-size: 0.9rem;
         line-height: 1.5rem;
     }
 
-
     main .experience .wrapper > ol > li {
         font-size: 0.75rem;
         line-height: 1.25rem;
     }
-
-
-        main .experience .wrapper > ol > li > ol > li > ol > li {
-            font-size: 0.65rem;
-            line-height: 0.8rem;
-        }
+ 
 }
 
 
