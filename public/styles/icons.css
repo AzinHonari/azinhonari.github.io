@@ -23,6 +23,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-cake:before {
   content: "\e916";
 }
@@ -80,6 +81,9 @@
 .icon-social:before {
   content: "\e908";
 }
+.icon-heart1:before {
+  content: "\e917";
+}
 .icon-user:before {
   content: "\e909";
 }
@@ -103,6 +107,9 @@
 }
 .icon-contact:before {
   content: "\e90a";
+}
+.icon-pin:before {
+  content: "\e91b";
 }
 .icon-iphone:before {
   content: "\e90b";
@@ -137,6 +144,9 @@
 .icon-spinner:before {
   content: "\e97a";
 }
+.icon-heart:before {
+  content: "\e9da";
+}
 .icon-radio-unchecked:before {
   content: "\ea56";
 }
@@ -166,6 +176,15 @@
 }
 .icon-cellular1:before {
   content: "\e90e";
+}
+.icon-heart-o:before {
+  content: "\e918";
+}
+.icon-heartbeat:before {
+  content: "\e919";
+}
+.icon-heart2:before {
+  content: "\e91a";
 }
 .icon-question-circle:before {
   content: "\e90f";
