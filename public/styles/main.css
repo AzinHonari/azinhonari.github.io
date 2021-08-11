@@ -638,3 +638,219 @@ main .interests .summary p{
         padding-top: 2rem;
     }
 }
+
+
+
+
+/*-----------------------------------------------------*/
+
+.golnarintroduction {
+    margin-top: 4rem;
+}
+
+.golnarintroduction .sidebar{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: calc(40% - 4rem);
+    float: left;
+    margin-right: 4rem;
+}
+
+.golnarintroduction .sidebar > div {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding-bottom: 100%;
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.golnarintroduction .sidebar > div h2 {
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 1rem;
+    right: 1rem;
+    left: 1rem;
+    color: white;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.golnarintroduction .sidebar >  h2 {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    color: rgb(185, 21, 172);
+    font-size: 2rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    font-weight: 800;
+}
+
+.golnarintroduction .sidebar ul {
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 4rem;
+}
+
+.golnarintroduction .sidebar ul li{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+.golnarintroduction .sidebar ul li span{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+}
+.golnarintroduction .sidebar ul li span:first-of-type{
+    width: 2rem;
+    line-height: 2rem;
+}
+
+.golnarintroduction .sidebar ul li span:first-of-type{
+    line-height: 2rem;
+}
+
+
+
+.golnarintroduction .content{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 60%;
+    float: left;
+    /* background-color: var(--clrPink25); */
+    text-align: justify;
+}
+
+.golnarintroduction .content h2{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 900;
+}
+
+.golnarintroduction .content p{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+.golnarintroduction .content ul{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.golnarintroduction .content ul li{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 400;
+}
+
+.golnarintroduction .content ul li:nth-of-type(2n+1){
+    width: 11rem;
+}
+
+.golnarintroduction .content ul li:nth-of-type(2n+2){
+    width: calc(100% - 11rem);
+    border-left: solid gray 0.1rem;
+    padding-left: 2rem;
+}
+
+
+
+.golnareducationandskills 
+{
+    background-color: lightblue;
+}
+
+
+.golnareducationandskills section
+{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+
+}
+
+.golnareducationandskills section:first-of-type
+{
+    width: calc(40% - 4rem);
+    margin-right: 4rem;
+}
+
+.golnareducationandskills section:last-of-type
+{
+    width: 60%;
+    margin-right: 0;
+}
+
+
+.golnareducationandskills section h3{
+    font-size: 1rem;
+    line-height: 2rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.golnareducationandskills section ul{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.golnareducationandskills section li{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+    padding: 1rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.golnareducationandskills section li:nth-of-type(2n+1){
+    width: 8rem;
+    min-height: 6rem;
+}
+
+.golnareducationandskills section li:nth-of-type(2n+2){
+    width: calc(100% - 8rem);
+    border-left: solid gray 0.1rem;
+    padding-left: 2rem;
+    min-height: 6rem;
+}
+
+
