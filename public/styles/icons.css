@@ -39,8 +39,38 @@
 .icon-user-solid-circle:before {
   content: "\e903";
 }
+.icon-open-book:before {
+  content: "\e91c";
+}
+.icon-leaf1:before {
+  content: "\e91d";
+}
 .icon-linkedin-with-circle:before {
   content: "\e904";
+}
+.icon-book:before {
+  content: "\e91e";
+}
+.icon-reading:before {
+  content: "\e91e";
+}
+.icon-book1:before {
+  content: "\e91f";
+}
+.icon-reading1:before {
+  content: "\e91f";
+}
+.icon-bike:before {
+  content: "\e920";
+}
+.icon-bicycle:before {
+  content: "\e920";
+}
+.icon-travel:before {
+  content: "\e920";
+}
+.icon-ride:before {
+  content: "\e920";
 }
 .icon-notice:before {
   content: "\e905";
@@ -74,6 +104,21 @@
 }
 .icon-schedule:before {
   content: "\e907";
+}
+.icon-puzzle:before {
+  content: "\e921";
+}
+.icon-piece:before {
+  content: "\e921";
+}
+.icon-plugin:before {
+  content: "\e921";
+}
+.icon-extension:before {
+  content: "\e921";
+}
+.icon-game:before {
+  content: "\e921";
 }
 .icon-linkedin:before {
   content: "\e908";
@@ -132,6 +177,12 @@
 .icon-cellular:before {
   content: "\e90c";
 }
+.icon-dice:before {
+  content: "\e922";
+}
+.icon-books:before {
+  content: "\e923";
+}
 .icon-clock:before {
   content: "\e94e";
 }
@@ -143,6 +194,9 @@
 }
 .icon-spinner:before {
   content: "\e97a";
+}
+.icon-leaf2:before {
+  content: "\e9a4";
 }
 .icon-heart:before {
   content: "\e9da";
@@ -176,6 +230,15 @@
 }
 .icon-cellular1:before {
   content: "\e90e";
+}
+.icon-paw:before {
+  content: "\e924";
+}
+.icon-leaf:before {
+  content: "\e925";
+}
+.icon-bicycle1:before {
+  content: "\e926";
 }
 .icon-heart-o:before {
   content: "\e918";

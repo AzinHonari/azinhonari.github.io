@@ -62,10 +62,11 @@ a{
     position: relative;
     margin: auto;
     overflow: hidden;
+    padding:2rem;
 }
 
+/*header ----------------------------------------------------*/  
 header {
-    padding: 2rem;
     background-color: var(--clrBlack900);
     overflow: hidden;
     color: var(--clrPink25);
@@ -114,13 +115,12 @@ header {
                 font-size: 0.75rem;
             }
 
-
+/*main ----------------------------------------------------*/  
 main .info {
     display: block;
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    padding: 2rem;
     background-color: var(--clrBlack900);
     color: var(--clrPink25);
     overflow: hidden;
@@ -182,13 +182,12 @@ main .info {
         font-size: 1rem;
     } 
 
-
+/*experience ----------------------------------------------------*/  
 main .experience {
     display: block;
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    padding: 2rem;
     overflow: hidden;
 }
 
@@ -280,85 +279,272 @@ main .experience {
             content: "";
         } 
 
+/*skills ----------------------------------------------------*/      
 main .skills {
     display: block;
     box-sizing: border-box;
     position: relative;
     width: 100%;
-    padding: 4rem 2rem;
     overflow: hidden;
     background-color:var(--clrGray100);
+    padding: 2rem 0;
 }
 
-    main .skills h2 {
-        color: var(--clrPink25);
-        font-weight: 700;
-        font-size: 1.5rem;
-        line-height: 3rem;
+main .skills h2 {
+    color: var(--clrBlack500);
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+
+main .skills .wrapper ul{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+    main .skills .wrapper ul li{
+        display: block;
+        position: relative;
+        width: calc(100% / 3 - 1rem);
+        box-sizing: border-box;
+        border :solid white 0.2rem;
+        float: left;
+        margin-right: 1.5rem;
     }
 
-
-    main .skills .wrapper > div {
-        width:calc(50% - 3rem);
-        float:left;
+    main .skills .wrapper ul li:nth-of-type(3n+3){
+        margin-right: 0;
     }
 
-    main .skills .wrapper > div:first-of-type {
-       margin-right:3rem;
-    }
-
-        main .skills .wrapper > div:last-of-type {
-            margin-left: 3rem;
-        }
-
-        main .skills .wrapper > div li {
-            display: block;
-            box-sizing: border-box;
-            margin-bottom: 1rem;
-            
-        }
-
-        main .skills .wrapper > div li:last-of-type {
-            margin-bottom: 0;
-        }
-
-        main .skills .wrapper > div li {
-            position: relative;
-            display: block;
-            box-sizing: border-box;
-            width: 100%;
-            height: 1.5rem;
-            
+        main .skills .wrapper ul li {
             text-align: left;
             border-radius: 0.5rem;
             border: solid 0.01rem var(--clrPink25);
             color: var(--clrPink25);
             font-weight: 400;
+            height: 1.5rem;
+            margin-bottom: 1rem;
         }
 
-            main .skills .wrapper > div li span {
+        main .skills .wrapper ul li i {
+            display: block;
+            box-sizing: border-box;
+            background-color: var(--clrBlack900);
+            position: absolute;
+            left: 0.05rem;
+            top: 0.05rem;
+            bottom: 0.05rem;
+            border-radius: 0.5rem;
+        }
+
+            main .skills .wrapper ul li h5 {
                 position: absolute;
                 display: block;
                 box-sizing: border-box;
                 top: 0;
                 bottom: 0;
                 right: 0;
-                left: 0.75rem;
+                left: 0.1rem;
                 font-size: 0.75rem;
-                line-height: 1.25rem;
+                padding-left: 0.5rem;
+                
+                z-index: 1;
             }
 
-            main .skills .wrapper > div li i {
+            main .skills .wrapper ul li h5 strong{
                 display: block;
-                box-sizing: border-box;
-                background-color: var(--clrBlack900);
-                position: absolute;
-                left: 0.05rem;
-                top: 0.05rem;
-                bottom: 0.05rem;
-                border-radius: 0.5rem;
+                float: left;
+                margin-top: 0.26rem;
             }
 
+            main .skills .wrapper ul li h5 span{
+                display: block;
+                width: 0.7rem;
+                height: 0.7rem;
+                border-radius: 0.25rem;
+                float: left;
+                margin-right: 0.5rem;
+                margin-top: 0.3rem;
+            }
+
+            main .skills .backendskill{
+                background-color:goldenrod;
+            }
+            main .skills .frontendskill{
+                background-color:var(--clrPink100);
+            }
+
+            main .skills .wrapper h3 {
+                display: inline-block;
+                font-size: 1rem;
+                line-height: 1.5rem;
+                color: var(--clrBlack500);
+                font-weight: 600;
+                margin-right: 2rem;
+            }
+
+            main .skills .wrapper h3:last-of-type {
+                margin-right:0;
+            }
+
+            main .skills .wrapper h3 span:first-of-type {
+                display: inline-block;
+                box-sizing: border-box;
+                width: 0.85rem;
+                height: 0.85rem;
+                border-radius: 0.35rem;
+            }
+/*interests ----------------------------------------------------*/
+main .interests {
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--clrGray600);
+}
+
+    main .interests h2 {
+        color: var(--clrBlack500);
+        font-weight: 700;
+        font-size: 1.5rem;
+        line-height: 3rem;
+        margin: 2rem 0 1rem 0;
+    }
+
+    main .interests ul{
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin-bottom: 2rem;
+    }
+
+    main .interests ul li{
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+        width: calc(100% / 5);
+        float: left;
+        text-align: center;
+        padding:0.5rem;
+    }
+
+    main .interests ul li::before{
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        content: '--';
+        top:3rem;
+        right: 0;
+        z-index: 0;
+        color: var(--clrPink50);
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    main .interests ul li:last-of-type:before{
+        display: none;
+    }
+
+    main .interests ul li::after{
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        content: '--';
+        top:3rem;
+        left: 0;
+        z-index: 0;
+        color: var(--clrPink50);
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    main .interests ul li:first-of-type:after{
+        display: none;
+    }
+
+    main .interests ul li span{
+        display: block;
+        position: relative;
+        width: 7rem;
+        height: 7rem;
+        background-color:var(--clrGray900);
+        color: var(--clrPink50);
+        border-radius: 50%;
+        margin:0 auto;
+        font-size:3rem;
+        line-height: 7rem;
+        font-weight: 400;
+    }
+
+    main .interests ul li h3{
+        color: var(--clrBlack700);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 1rem 0 1.5rem 0;
+        font-family: Roboto !important;
+    }
+
+
+
+    main .interests ul li.mark span{
+        background-color:var(--clrPink50);
+        color:var(--clrGray900);
+    }
+
+    main .interests ul li.mark h3{
+        font-weight: 800;
+    }
+
+
+
+    main .interests ul li div{
+        display: none;
+        
+    }
+
+main .interests .summary{
+    display: block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    background-color:var(--clrGray900);
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+
+main .interests .summary p{
+    color: var(--clrBlack500);
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+
+/*media ----------------------------------------------------*/   
+@media only screen and (max-width: 660px){
+    
+    main .skills .wrapper ul li{
+        width: calc(100% / 2 - 1rem);
+        margin-right: 2rem;
+    }
+
+    main .skills .wrapper ul li:nth-of-type(3n+3){
+        margin-right: 2rem;
+    }
+
+    main .skills .wrapper ul li:nth-of-type(2n+2){
+        margin-right: 0;
+    }
+}
 @media only screen and (max-width: 500px) {
     main .info .content {
         display: block;
@@ -396,26 +582,11 @@ main .skills {
         top:0;
     }
 
-    main .skills .wrapper > div {
+    main .skills .wrapper ul li{
         width: 100%;
-        float: none;;
+        margin-right: 0;
     }
 
-        main .skills h2 {
-        color: var(--clrPink25);
-        font-weight: 700;
-        font-size: 1.25rem;
-        line-height: 3rem;
-    }
-
-        main .skills .wrapper > div:first-of-type {
-            margin-right: 0;
-        }
-
-        main .skills .wrapper > div:last-of-type {
-            margin-left:0;
-            margin-top:3rem;
-        }
 }
 
 @media only screen and (max-width: 440px) {
