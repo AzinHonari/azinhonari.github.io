@@ -422,7 +422,6 @@ main .interests {
         position: relative;
         box-sizing: border-box;
         overflow: hidden;
-        margin-bottom: 2rem;
     }
 
     main .interests ul li{
@@ -433,7 +432,7 @@ main .interests {
         width: calc(100% / 5);
         float: left;
         text-align: center;
-        padding:0.5rem;
+        padding-bottom: 3rem;
     }
 
     main .interests ul li::before{
@@ -482,6 +481,7 @@ main .interests {
         font-size:3rem;
         line-height: 7rem;
         font-weight: 400;
+        cursor: pointer;
     }
 
     main .interests ul li h3{
@@ -493,6 +493,9 @@ main .interests {
     }
 
 
+    main .interests ul li h4{
+        display: none;
+    }
 
     main .interests ul li.mark span{
         background-color:var(--clrPink50);
@@ -510,6 +513,28 @@ main .interests {
         
     }
 
+    main .interests li .indicator{
+        display: none;
+    }
+
+
+    main .interests li.mark .indicator{
+        display: block;
+        position: absolute;
+        box-sizing: border-box;
+        width: 4rem;
+        height: 4rem;
+        border: seagreen 1px;
+        border-radius: 0;
+        background-color:var(--clrGray900) !important;
+        z-index: 1;
+        bottom: -2rem;
+        left: 50%;
+        transform:translateX(-50%) rotate(45deg);
+    }
+
+
+
 main .interests .summary{
     display: block;
     position: relative;
@@ -519,6 +544,7 @@ main .interests .summary{
     padding: 2rem;
     border-radius: 1rem;
     overflow: hidden;
+    margin-bottom: 4rem;
 }
 
 
@@ -526,10 +552,120 @@ main .interests .summary p{
     color: var(--clrBlack500);
     font-size: 1rem;
     line-height: 2rem;
+    text-align: justify;
 }
 
 
+
+
 /*media ----------------------------------------------------*/   
+@media only screen and (max-width: 900px){
+    main .interests ul li::before{
+        content: '-';
+    }
+
+
+    main .interests ul li::after{
+        content: '-';
+    }
+}
+
+@media only screen and (max-width: 750px){
+    main .interests ul li::before{
+        content: '';
+    }
+
+
+    main .interests ul li::after{
+        content: '';
+    }
+}
+
+
+@media only screen and (max-width: 670px){
+   
+    main .interests ul li{
+        width: 100%;
+    }
+
+    main .interests ul li::before{
+        display:none;
+    }
+
+    main .interests ul li::after{
+        display: none;
+    }
+
+    main .interests ul li span{
+        display: block;
+        position: absolute;
+        width: 7rem;
+        height: 7rem;
+        margin: 0;
+        top: 0.5rem;
+        left: 2rem;
+        z-index: 1;
+        box-shadow: rgb(146, 146, 146) 1px 1px 5px 2px;
+    }
+
+    main .interests ul li.mark span{
+        background-color:var(--clrGray900);
+        color: var(--clrPink50);
+    }
+
+
+    main .interests ul li h3{
+        display: none;
+    }
+
+
+    main .interests ul li h4{
+        display: block;
+        text-align: left;
+        font-weight: 600;
+        color: var(--clrBlack700);
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin: 3rem 0 1.5rem 0;
+        font-family: Roboto !important;
+    }
+
+
+
+    main .interests ul li div{
+        display: block;
+        position: relative;
+        box-sizing: border-box;
+        width: 100%;
+        background-color:var(--clrGray900);
+        padding: 2rem;
+        border-radius: 1rem;
+        overflow: hidden;
+        margin-bottom: 0;
+        margin-top: 4rem;
+    }
+
+    main .interests  ul li div p{
+        color: var(--clrBlack500);
+        font-size: 1rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+
+    main .interests li.mark .indicator{
+        display: none;
+    }
+
+
+main .interests .summary{
+    display: none;
+}
+
+}
+
+
+
+
 @media only screen and (max-width: 660px){
     
     main .skills .wrapper ul li{
@@ -638,219 +774,4 @@ main .interests .summary p{
         padding-top: 2rem;
     }
 }
-
-
-
-
-/*-----------------------------------------------------*/
-
-.golnarintroduction {
-    margin-top: 4rem;
-}
-
-.golnarintroduction .sidebar{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: calc(40% - 4rem);
-    float: left;
-    margin-right: 4rem;
-}
-
-.golnarintroduction .sidebar > div {
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    padding-bottom: 100%;
-    
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.golnarintroduction .sidebar > div h2 {
-    display: block;
-    position: absolute;
-    box-sizing: border-box;
-    bottom: 1rem;
-    right: 1rem;
-    left: 1rem;
-    color: white;
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.golnarintroduction .sidebar >  h2 {
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    color: rgb(185, 21, 172);
-    font-size: 2rem;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    font-weight: 800;
-}
-
-.golnarintroduction .sidebar ul {
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 4rem;
-}
-
-.golnarintroduction .sidebar ul li{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 500;
-}
-
-.golnarintroduction .sidebar ul li span{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    float: left;
-}
-.golnarintroduction .sidebar ul li span:first-of-type{
-    width: 2rem;
-    line-height: 2rem;
-}
-
-.golnarintroduction .sidebar ul li span:first-of-type{
-    line-height: 2rem;
-}
-
-
-
-.golnarintroduction .content{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: 60%;
-    float: left;
-    /* background-color: var(--clrPink25); */
-    text-align: justify;
-}
-
-.golnarintroduction .content h2{
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 900;
-}
-
-.golnarintroduction .content p{
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 400;
-    margin-bottom: 2rem;
-}
-
-.golnarintroduction .content ul{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 1rem;
-}
-
-.golnarintroduction .content ul li{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    float: left;
-    padding: 1rem 0;
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 400;
-}
-
-.golnarintroduction .content ul li:nth-of-type(2n+1){
-    width: 11rem;
-}
-
-.golnarintroduction .content ul li:nth-of-type(2n+2){
-    width: calc(100% - 11rem);
-    border-left: solid gray 0.1rem;
-    padding-left: 2rem;
-}
-
-
-
-.golnareducationandskills 
-{
-    background-color: lightblue;
-}
-
-
-.golnareducationandskills section
-{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    float: left;
-
-}
-
-.golnareducationandskills section:first-of-type
-{
-    width: calc(40% - 4rem);
-    margin-right: 4rem;
-}
-
-.golnareducationandskills section:last-of-type
-{
-    width: 60%;
-    margin-right: 0;
-}
-
-
-.golnareducationandskills section h3{
-    font-size: 1rem;
-    line-height: 2rem;
-    font-weight: 700;
-    margin: 2rem 0;
-}
-
-.golnareducationandskills section ul{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 1rem;
-}
-
-.golnareducationandskills section li{
-    display: block;
-    position: relative;
-    box-sizing: border-box;
-    overflow: hidden;
-    float: left;
-    padding: 1rem 0;
-    font-size: 1rem;
-    line-height: 1.5rem;
-    font-weight: 400;
-}
-
-.golnareducationandskills section li:nth-of-type(2n+1){
-    width: 8rem;
-    min-height: 6rem;
-}
-
-.golnareducationandskills section li:nth-of-type(2n+2){
-    width: calc(100% - 8rem);
-    border-left: solid gray 0.1rem;
-    padding-left: 2rem;
-    min-height: 6rem;
-}
-
 
