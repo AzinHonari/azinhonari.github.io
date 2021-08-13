@@ -361,7 +361,20 @@
                     </div>
                 </div>
 </main>
-        
-
 </body>
+
+<script>
+    document.querySelectorAll(".interests li").forEach(element => {
+       
+        element.addEventListener("click", function (event) {
+        document.querySelector(".interests li.mark").classList.remove("mark");
+        event.target.closest("li").classList.add("mark");
+        
+        document.querySelector(".interests .summary .chbx").innerHTML= event.target.closest("li").querySelector(".chbx").innerHTML;
+
+        });
+    });
+
+</script>
+
 </html>
