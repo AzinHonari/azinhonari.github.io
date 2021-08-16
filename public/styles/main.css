@@ -492,21 +492,15 @@ main .interests {
         font-family: Roboto !important;
     }
 
-
-    main .interests ul li h4{
-        display: none;
-    }
-
     main .interests ul li.mark span{
         background-color:var(--clrPink50);
         color:var(--clrGray900);
+        transition: background-color 0.5s ease-in-out;
     }
 
     main .interests ul li.mark h3{
         font-weight: 800;
     }
-
-
 
     main .interests ul li div{
         display: none;
@@ -517,13 +511,12 @@ main .interests {
         display: none;
     }
 
-
     main .interests li.mark .indicator{
         display: block;
         position: absolute;
         box-sizing: border-box;
-        width: 4rem;
-        height: 4rem;
+        width: 3rem;
+        height: 3rem;
         border: seagreen 1px;
         border-radius: 0;
         background-color:var(--clrGray900) !important;
@@ -532,8 +525,6 @@ main .interests {
         left: 50%;
         transform:translateX(-50%) rotate(45deg);
     }
-
-
 
 main .interests .summary{
     display: block;
@@ -547,6 +538,9 @@ main .interests .summary{
     margin-bottom: 4rem;
 }
 
+main .interests .summary h4{
+    display: none;
+}
 
 main .interests .summary p{
     color: var(--clrBlack500);
@@ -555,6 +549,9 @@ main .interests .summary p{
     text-align: justify;
 }
 
+main .interests .summary p strong{
+    color: var(--clrPink100);
+}
 
 
 
@@ -570,19 +567,7 @@ main .interests .summary p{
     }
 }
 
-@media only screen and (max-width: 750px){
-    main .interests ul li::before{
-        content: '';
-    }
-
-
-    main .interests ul li::after{
-        content: '';
-    }
-}
-
-
-@media only screen and (max-width: 670px){
+@media only screen and (max-width: 800px){
    
     main .interests ul li{
         width: 100%;
@@ -663,31 +648,23 @@ main .interests .summary{
 
 }
 
-
-
-
-@media only screen and (max-width: 660px){
-    
-    main .skills .wrapper ul li{
-        width: calc(100% / 2 - 1rem);
-        margin-right: 2rem;
+@media only screen and (max-width: 750px){
+    main .interests ul li::before{
+        content: '';
     }
 
-    main .skills .wrapper ul li:nth-of-type(3n+3){
-        margin-right: 2rem;
-    }
 
-    main .skills .wrapper ul li:nth-of-type(2n+2){
-        margin-right: 0;
+    main .interests ul li::after{
+        content: '';
     }
 }
-@media only screen and (max-width: 500px) {
+
+@media only screen and (max-width: 660px){
     main .info .content {
         display: block;
         box-sizing: border-box;
         width: 100%;
         clear:both;
-        
     }
 
         main .info .content:last-of-type {
@@ -717,7 +694,22 @@ main .interests .summary{
         right: 0;
         top:0;
     }
+    
+    main .skills .wrapper ul li{
+        width: calc(100% / 2 - 1rem);
+        margin-right: 2rem;
+    }
 
+    main .skills .wrapper ul li:nth-of-type(3n+3){
+        margin-right: 2rem;
+    }
+
+    main .skills .wrapper ul li:nth-of-type(2n+2){
+        margin-right: 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
     main .skills .wrapper ul li{
         width: 100%;
         margin-right: 0;
