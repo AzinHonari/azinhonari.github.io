@@ -549,7 +549,7 @@ main .interests .summary p{
     text-align: justify;
 }
 
-main .interests .summary p strong{
+main .interests p strong{
     color: var(--clrPink100);
 }
 
